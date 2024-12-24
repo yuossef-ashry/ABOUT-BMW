@@ -1,31 +1,22 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 :root {
-  --main-color: #024CAA;
+  --main-color: #024caa;
 
   --section-padding: 100px;
 }
 /* End Variables */
 /* Start Global Rules */
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-body{
-    background-color: black;
-    color: white;
-  font-family: "Playfair Display", serif;
-     padding-left: 60px;
-     padding-right: 60px;
+body {
+  background-color: black;
+  color: white;
+  font-family: "Bebas Neue", serif;
+  padding-left: 60px;
+  padding-right: 60px;
 }
-
-
-
-
-
 
 /* Start Header */
 .header {
@@ -36,9 +27,8 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color:#024CAA;
-font-family: "Playfair Display", serif;
-
+  color: #024caa;
+  font-family: "Bebas Neue", serif;
 }
 .header .logo {
   width: 60px;
@@ -49,7 +39,6 @@ font-family: "Playfair Display", serif;
 .header .links:hover .icon span:nth-child(2) {
   width: 100%;
 }
-
 
 .header .links .icon span:first-child {
   width: 100%;
@@ -92,8 +81,8 @@ font-family: "Playfair Display", serif;
   padding: 15px;
   text-decoration: none;
   color: #ffffff;
-font-family: "Playfair Display", serif;
-  
+  font-family: "Bebas Neue", serif;
+
   transition: var(--main-duration);
 }
 .header .links ul li a:hover {
@@ -119,7 +108,6 @@ video {
   height: 100%;
   object-fit: cover;
 }
-
 
 .landing {
   min-height: 100vh;
@@ -148,8 +136,8 @@ video {
 }
 .landing .text .content {
   max-width: 500px;
-  
-font-family: "Playfair Display", serif;
+
+  font-family: "Bebas Neue", serif;
 }
 @media (max-width: 767px) {
   .landing .text {
@@ -165,12 +153,12 @@ font-family: "Playfair Display", serif;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #ffffff;
-font-family: "Playfair Display", serif;
+  font-family: "Bebas Neue", serif;
 }
 .landing .text .content p {
   font-size: 14px;
   line-height: 2;
- font-family: "Playfair Display", serif;
+  font-family: "Bebas Neue", serif;
 }
 .landing .change-background {
   position: absolute;
@@ -204,23 +192,20 @@ font-family: "Playfair Display", serif;
   margin-right: 10px;
 }
 .landing .bullets li.active {
-  background-color: #024CAA;
-  border-color: #024CAA;
+  background-color: #024caa;
+  border-color: #024caa;
 }
 /* End Landing */
 
-
-
-
-.nmbbb{
+.nmbbb {
   background-image: linear-gradient(
     to right,
     #000000af,
     #99ccff 50%,
     #000000 50%
-  ); width: 100%;
+  );
+  width: 100%;
 }
-
 
 /* Start Landing */
 .landingm {
@@ -233,7 +218,7 @@ font-family: "Playfair Display", serif;
   top: -40px;
   width: 100%;
   height: 100%;
-  
+
   z-index: -1;
   transform: skewY(-6deg);
   transform-origin: top left;
@@ -255,7 +240,7 @@ font-family: "Playfair Display", serif;
 .landingm .text h1 {
   font-size: 40px;
   margin: 0;
-  color: #024CAA;
+  color: #024caa;
   letter-spacing: -2px;
 }
 @media (max-width: 767px) {
@@ -269,11 +254,11 @@ font-family: "Playfair Display", serif;
   margin: 5px 0 0;
   color: #ffffff;
   max-width: 500px;
- }
+}
 @media (max-width: 991px) {
   .landingm .text p {
     margin: 10px auto;
-   }
+  }
 }
 @media (max-width: 767px) {
   .landingm .text p {
@@ -306,14 +291,13 @@ font-family: "Playfair Display", serif;
 }
 /* End Landing */
 
-
 /* Start Footer */
 .footer {
   background-color: #000000;
-  padding: 70px 0 0;
-   border-top: 0.5px solid #444;
+  padding: 40px 0 0;
+  border-top: 0.5px solid #444;
 }
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   .footer {
     text-align: center;
   }
@@ -321,10 +305,9 @@ font-family: "Playfair Display", serif;
 .footer .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 60px;
 }
 .footer .box h3 {
-  color: #024CAA;
+  color: #024caa;
   font-size: 50px;
   margin: 0 0 20px;
 }
@@ -352,35 +335,25 @@ font-family: "Playfair Display", serif;
   font-size: 20px;
   transition: var(--main-transition);
 }
-.footer .box .social .facebook:hover {
-  background-color: #1877f2;
-}
-.footer .box .social .twitter:hover {
-  background-color: #1da1f2;
-}
-.footer .box .social .youtube:hover {
-  background-color: #ff0000;
-}
+
 .footer .box .text {
   line-height: 2;
   width: 218px;
-  color: #b9b9b9;
+  color: #ffffff;
   margin: 0px;
   font-size: 30px;
 }
 .footer .box .links li {
   padding: 15px 0;
- 
+
   transition: var(--main-transition);
 }
-.footer .box .links li:not(:last-child) {
-  border-bottom: 1px solid #444;
-}
+
 .footer .box .links li:hover {
   padding-left: 10px;
 }
 .footer .box .links li:hover a {
-  color: white;
+  color: #024caa;
 }
 .footer .box .links li a {
   color: #b9b9b9;
@@ -401,7 +374,7 @@ font-family: "Playfair Display", serif;
 }
 .footer .box .line i {
   font-size: 25px;
-  color: var(--main-color);
+  color: #024caa;
   margin-right: 10px;
 }
 @media (max-width: 767px) {
