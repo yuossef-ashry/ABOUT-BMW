@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
 :root {
   --main-color: #024caa;
 
@@ -231,6 +232,7 @@ video {
 }
 .landingm .text {
   flex: 1;
+   font-family: "Beiruti", serif;
 }
 @media (max-width: 991px) {
   .landingm .text {
